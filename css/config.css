@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(../resource/background-main.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden; 
+}
+
+* {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    /*width: 80%;
+    /*margin: auto;*/
+}
+
+section:nth-child(n+2) {
+    padding: 40px 0;
+}
+
+.btn {
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: block;
+    width: 172px;
+    height: 65px;
+    margin: auto;
+    text-align: center;
+    line-height: 65px;
+    transition: all 0.7s;
+}
+
+@media (max-width: 375px) {
+
+
+    section:nth-child(n+2) {
+        padding: 15px 0;
+    }
+}

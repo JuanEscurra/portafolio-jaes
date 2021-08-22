@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+@import './config.css';
+@import './header.css';
+@import './home.css';
+@import './skills.css';
+@import './projects.css';
+@import './footer.css';
+
+:root {
+    --bg-dark: #383838;
+    --blue: #116CE1;
+    --naranja: #E18611;
+}
+
+html {
+    scroll-behavior: smooth;
+}

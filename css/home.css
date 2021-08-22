@@ -1,0 +1,59 @@
+.home {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+.banner {
+    width: 330px;
+}
+
+.banner__title {
+    font-size: 48px;
+    color: var(--blue);
+    margin-bottom: 10px;
+}
+
+.banner__subtitle {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    column-gap: 10px;
+}
+
+.banner__subtitle::before {
+    content: '';
+    display: block;
+    width: 68px;
+    height: 7px;
+    border-radius: 15px 0 0 15px;
+    background-color: white;
+}
+
+.banner__subtitle::after {
+    content: '';
+    display: block;
+    width: 68px;
+    height: 7px;
+    border-radius: 0 15px 15px 0;
+    background-color: white;
+}
+
+.banner__description {
+    font-size: 16px;
+    font-weight: 400;
+    color: blanchedalmond;
+    margin: 40px 0;
+}
+
+.btn--contact {
+    background-color: var(--naranja);
+}
+
+.btn--contact:hover {
+    background: var(--blue);
+    transform: scale(1.05);
+}

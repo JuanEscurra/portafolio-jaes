@@ -1,0 +1,84 @@
+.skills {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skills__title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px 80px;
+    flex-wrap: wrap;
+}
+
+.skills__item {
+    width: 165px;
+    background-color: #232323;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.6s;
+}
+
+.skills__item *{
+    display: block;
+    margin: 15px auto;
+}
+
+.skills__item img {
+    transition: all 1s;
+}
+
+.skills__name {
+    text-align: center;
+}
+
+/*Animaciones*/
+.skills__item:hover img {
+    transform: scale(1.05);
+}
+
+.skills__item--html:hover {
+    filter: drop-shadow(10px 10px 30px #fc6c04);
+}
+
+.skills__item--css:hover {
+    filter: drop-shadow(10px 10px 30px #0494dc);
+}
+
+.skills__item--js:hover {
+    filter: drop-shadow(10px 10px 30px #fcd404);
+}
+
+.skills__item--react:hover {
+    filter: drop-shadow(10px 10px 30px #349cdc);
+}
+
+.skills__item--java:hover {
+    filter: drop-shadow(10px 10px 30px #f44434);
+}
+
+.skills__item--mysql:hover {
+    filter: drop-shadow(10px 10px 30px #046e74);
+}
+
+.skills__item--spring:hover {
+    filter: drop-shadow(10px 10px 30px #8cc44c);
+}
+
+.skills__item--git:hover {
+    filter: drop-shadow(10px 10px 30px #f8541c);
+}
+
+@media (max-width: 375px) {
+    .skills {
+        width: 95%;
+    }
+
+    .skills__list {
+        gap: 10px 5px;
+    }
+}

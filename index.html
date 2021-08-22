@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resource/logo/logo_small_icon_only_inverted.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a1a84ee869.js" crossorigin="anonymous"></script>
+    <title>Juan Escurra</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <a href="#home">
+                <img src="./resource/logo/logo_small.png" width="180px"/>
+            </a>
+        </div>
+        <label for="input-hamburger" class="hamburger__label"></label>
+        <input type="checkbox" id="input-hamburger" class="hamburger__input"></input>
+        <nav class="header__navbar">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#about" class="header__link active">
+                        About
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#skills" class="header__link">
+                        Skills
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#projects" class="header__link">
+                        Projects
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="#contact" class="header__link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__redes" id="redes-social">
+            <ul class="header__list">
+                <li>
+                    <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-github-square fa-3x"></i></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="home">
+            <div class="banner">
+                <h1 class="banner__title">Juan Escurra</h1>
+                <span class="banner__subtitle">WEB DEVELOPER</span>
+                <p class="banner__description">¿Necesitas un desarrollador de software en tu equipo? ¿Quieres agilizar o mejorar los procesos de tu negocio?</p>
+                <a class="btn btn--contact" href="#contact">Contactame</a>
+            </div>
+        </section>
+        <section class="skills" id="skills">
+            <h2 class="skills__title">Skills</h2>
+            <div class="skills__list">
+                <div class="skills__item skills__item--html">
+                    <img src="./resource/html.png" alt="...">
+                    <span class="skills__name">HTML</span>
+                </div>
+                <div class="skills__item skills__item--css">
+                    <img src="./resource/css.png" alt="...">
+                    <span class="skills__name">CSS</span>
+                </div>
+                <div class="skills__item skills__item--js">
+                    <img src="./resource/javascript.png" alt="...">
+                    <span class="skills__name">JAVASCRIPT</span>
+                </div>
+                <div class="skills__item skills__item--react">
+                    <img src="./resource/react.png" alt="...">
+                    <span class="skills__name">REACT JS</span>
+                </div>
+                <div class="skills__item skills__item--java">
+                    <img src="./resource/java.png" alt="...">
+                    <span class="skills__name">JAVA</span>
+                </div>
+                <div class="skills__item skills__item--mysql">
+                    <img src="./resource/mysql.png" alt="...">
+                    <span class="skills__name">MYSQL</span>
+                </div>
+                <div class="skills__item skills__item--spring">
+                    <img src="./resource/spring.png" alt="...">
+                    <span class="skills__name">SPRING</span>
+                </div>
+                <div class="skills__item skills__item--git">
+                    <img src="./resource/git.png" alt="...">
+                    <span class="skills__name">GIT</span>
+                </div>
+            </div>
+        </section>
+        <section class="projects" id="projects">
+            <h2 class="skills__title">Projects</h2>
+            <div class="project__list">
+                <div class="project__item">
+                    <img
+                        class="project__img"
+                        src="./resource/img-project.png" alt=".." />
+                    <div class="project__content">
+                        <h4 class="project__title">Titulo del proyecto</h4>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, illo minus nulla pariatur cum id aperiam provident esse odit eos doloremque recusandae temporibus labore amet vero aspernatur tenetur tempore quos.</p>
+                        <a href="#" class="btn btn--details">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <img
+                        class="project__img"
+                        src="./resource/img-project.png" alt=".." />
+                    <div class="project__content">
+                        <h4 class="project__title">Titulo del proyecto</h4>
+                        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, illo minus nulla pariatur cum id aperiam provident esse odit eos doloremque recusandae temporibus labore amet vero aspernatur tenetur tempore quos.</p>
+                        <a href="#" class="btn btn--details">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contact">
+        <div class="footer__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62391.24315902648!2d-76.97836449070827!3d-12.217597547890916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105bbdf86cf55fb%3A0xe3f98719d1fabbd4!2sVilla%20EL%20Salvador!5e0!3m2!1ses!2spe!4v1626063023805!5m2!1ses!2spe"
+                id="map"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+        </div>
+        <div class="footer__redes">
+            <h4 class="footer__subtitle">Redes sociales</h4>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <i class="fab fa-linkedin fa-2x"></i><span>Juan Escurra</span>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <i class="fab fa-github-square fa-2x"></i><span>juan_escurra</span>
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <i class="fab fa-facebook-square fa-2x"></i><span>Juan Escurra</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
