@@ -1,15 +1,29 @@
 .header {
-    min-height: 80px;
+    position: sticky;
+    top: 0;
+    height: 80px;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Russo One', sans-serif;
+    transition: background-color 0.6s
 }
-/*
+
+.scroll {
+    background-color: var(--bg-dark);
+}
+
 .header__logo {
-    line-height: 80px;
-}*/
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo a {
+    display: block;
+}
+
 .hamburger__label {
     display: none;
     background: transparent;
@@ -18,7 +32,7 @@
     background-position: center center;
     border: 0;
     width: 80px;
-    height: 40px;
+    height: 100%;
 }
 
 .hamburger__input {
@@ -80,7 +94,7 @@
 
 @media (max-width: 375px) {
     .header {
-        padding: 23px 0;
+        padding: 0;
         flex-wrap: wrap;
         transition: all 0.5;
     }
@@ -92,16 +106,17 @@
         display: none;
         opacity: 0;
         width: 375px;
-        height: 200px;
+        height: 587px;
         padding: 15px;
     }
     .header__list {
-        flex-direction: column;
-        row-gap: 20px;
         position: absolute;
+        flex-direction: column;
+        row-gap: 35px;
+        margin: 70px 0;
         width: 100%;
-        height: 200px;
         left: 0;
+        font-size: 25px;
     }
     .hamburger__label {
         display: block;
