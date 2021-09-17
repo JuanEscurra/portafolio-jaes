@@ -33,7 +33,7 @@ section:nth-child(n+2) {
     margin: auto;
     text-align: center;
     line-height: 65px;
-    transition: all 0.7s;
+    transition: all 0.3s;
 }
 
 @media (max-width: 375px) {

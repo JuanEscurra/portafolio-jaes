@@ -9,7 +9,6 @@ const activarLink = (element) => {
 }
 
 window.addEventListener('scroll',() => {
-    console.log(skills.offsetTop);
     if(window.scrollY > 40) {
         document.querySelector('#header').classList.add('scroll');
     } else {
@@ -28,6 +27,13 @@ window.addEventListener('scroll',() => {
 
 const listProjects = document.querySelector('#project-list');
 data.forEach(project => {
+    let technologies = document.createElement('div');
+    if(project?.technologies != null) {
+        project.technologies.forEach(technology => {
+            technologies.innerHTML += `<img src="./resource/${technology}.png" alt="${technology}"></img>`
+        })
+    }
+
     listProjects.innerHTML += `<div class="project__item">
         <img
             class="project__img"
@@ -35,6 +41,12 @@ data.forEach(project => {
         <div class="project__content">
             <h4 class="project__title">${project.name}</h4>
             <p class="project__description">${project.description}</a>
+            <div class="technologies">
+                ${technologies?.innerHTML}
+            </div>
+            <a href="${project.link}" target="_blank" class="btn btn--details">
+                Ver más info
+            </a>
         </div>
     </div>`
 })

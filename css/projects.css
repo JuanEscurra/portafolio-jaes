@@ -16,10 +16,12 @@
 }
 
 .project__item {
+    padding: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 50px;
+    border-top: 5px solid white;
 }
 
 .project__img {
@@ -31,10 +33,36 @@
     border-radius: 8px;
 }
 
+.project__description {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.project__description a {
+    color: var(--blue);
+}
+
+.technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 25px;
+}
+
+.technologies > img {
+    width: 50px;
+    transition: transform 0.5s;
+}
+
+.technologies > img:hover {
+    transform: scale(1.2);
+}
+
 .btn--details {
     height: 50px;
     line-height: 50px;
     background-color: var(--naranja);
+    margin: 20px auto;
 }
 
 .btn--details:hover {
